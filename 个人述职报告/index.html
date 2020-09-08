@@ -10,14 +10,18 @@
 	<link rel="stylesheet" href="../aqua.css/aqua.min.css">
 	<link rel="stylesheet" href="../reveal.js/dist/reset.css" />
 	<link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
-	<link rel="stylesheet" href="../reveal.js/dist/theme/black.css" id="theme" />
 	<link rel="stylesheet" href="../custom/custom.css">
-
-	<!-- Theme used for syntax highlighted code -->
-	<link rel="stylesheet" href="../reveal.js/plugin/highlight/vs2015.css" id="highlight-theme" />
 </head>
 
 <body>
+	<svg width="0" height="0" class="absolute">
+		<filter id="noise">
+			<feTurbulence type="turbulence" baseFrequency="0.01 0.4" numOctaves="2" seed="2" stitchTiles="stitch" result="turbulence1">
+				<animate attributeName="baseFrequency" from="0.01 0.4" to="0.01 4" dur="0.6s" repeatCount="indefinite"></animate>
+			</feTurbulence>
+			<feDisplacementMap in="SourceGraphic" in2="turbulence1" scale="20" xChannelSelector="R" yChannelSelector="R" result="displacementMap" />
+		</filter>
+	</svg>
 	<div class="reveal">
 		<div class="slides">
 			<section>
@@ -27,857 +31,473 @@
 				</header>
 			</section>
 			<section>
-				<h2>目录</h2>
-				<ul class="text-3xl">
-					<li>自我介绍</li>
-					<li>工作成果</li>
-					<li>心得体会</li>
-					<li>未来规划</li>
-					<li>我的博客</li>
-				</ul>
-			</section>
-			<section>
-				<section data-auto-animate>
-					<h2 data-id="code-title">自我介绍</h2>
-				</section>
-				<section data-auto-animate>
-					<h2 data-id="code-title">自我介绍</h2>
-					<pre data-id="code-animation">
-							<code class="hljs" data-trim data-line-numbers="6">
-								import Vue from "vue";
-	
-								const me = new Vue({
-									data() {
-										return {
-											name: '王浩彬'
-										}
-									}
-								})
-							</code>
-						</pre>
-				</section>
-				<section data-auto-animate>
-					<h2 data-id="code-title">自我介绍</h2>
-					<pre data-id="code-animation">
-							<code class="hljs" data-trim data-line-numbers="6-7">
-								import Vue from "vue";
-	
-								const me = new Vue({
-									data() {
-										return {
-											name: '王浩彬',
-											dept: '技术部'
-										}
-									}
-								})
-							</code>
-						</pre>
-				</section>
-				<section data-auto-animate>
-					<h2 data-id="code-title">自我介绍</h2>
-					<pre data-id="code-animation">
-							<code class="hljs" data-trim data-line-numbers="6-8">
-								import Vue from "vue";
-	
-								const me = new Vue({
-									data() {
-										return {
-											name: '王浩彬',
-											dept: '技术部',
-											post: 'web前端(实习)'
-										}
-									}
-								})
-							</code>
-						</pre>
-				</section>
-				<section data-auto-animate>
-					<h2 data-id="code-title">自我介绍</h2>
-					<pre data-id="code-animation">
-							<code class="hljs" data-trim data-line-numbers="6-9"> 
-								import Vue from "vue";
-	
-								const me = new Vue({
-									data() {
-										return {
-											name: '王浩彬',
-											dept: '技术部',
-											post: 'web前端(实习)',
-											since: '2020年5月18日'
-										}
-									}
-								})
-							</code>
-						</pre>
-				</section>
-				<section data-auto-animate>
-					<h2 data-id="code-title">自我介绍</h2>
-					<pre data-id="code-animation">
-							<code class="hljs" data-trim data-line-numbers="6-10"> 
-								import Vue from "vue";
-	
-								const me = new Vue({
-									data() {
-										return {
-											name: '王浩彬',
-											dept: '技术部',
-											post: 'web前端(实习)',
-											since: '2020年5月18日',
-											hobby: ['动漫', '日语', '前端']
-										}
-									}
-								})
-							</code>
-						</pre>
-				</section>
-			</section>
-			<section>
-				<section data-transition="convex">
-					<h2>工作成果</h2>
-				</section>
-				<section data-transition="convex">
-					<div class="flex justify-center items-center">
-						<div id="project-summary" style="width: 600px;height:400px;"></div>
-					</div>
-				</section>
-				<section data-transition="convex">
-					<h4>项目示例</h4>
-					<table class="text-xl">
-						<thead>
-							<tr>
-								<th>种类</th>
-								<th>例子</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>展示</td>
-								<td>大墅尚品、夏日饮品节</td>
-							</tr>
-							<tr>
-								<td>问答</td>
-								<td>高新区答题、梦百合性格测试</td>
-							</tr>
-							<tr>
-								<td>滑屏</td>
-								<td>常熟七五普法、文明健康广告</td>
-							</tr>
-							<tr>
-								<td>游戏</td>
-								<td>垃圾分一分</td>
-							</tr>
-							<tr>
-								<td>点亮</td>
-								<td>禧徕乐周年庆、卡滋贝诺</td>
-							</tr>
-							<tr>
-								<td>投票</td>
-								<td>十佳污防案例、最美城市管家</td>
-							</tr>
-							<tr>
-								<td>小程序</td>
-								<td>家装监理</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-				<section data-transition="convex">
-					<h2>问答类：高新区答题</h2>
-					<img src="./assets/project-1-qrcode.jpg" class="w-64" alt="">
-				</section>
-				<section data-transition="convex">
-					<h2>活动流程</h2>
-					<div class="mx-36 flex justify-between items-center">
-						<img src="./assets/project-1-flow.gif" class="w-32" alt="">
-						<ol class="text-lg">
-							<li class="fragment">主人公在画面左上方出现，开始行走</li>
-							<li class="fragment">行走至第一个点时停下脚步，划入问题弹窗</li>
-							<li class="fragment">回答正确与错误则弹出相应的弹窗</li>
-							<li class="fragment">之后主人公继续行走，画面也会随之移动</li>
-							<li class="fragment">如此往复答完5题，跳转到海报页面</li>
-							<li class="fragment">结果会提交到后台，5题全对则增加抽奖机会</li>
-						</ol>
-					</div>
-				</section>
-				<section data-transition="convex">
-					<h2>活动要点</h2>
-					<div class="mx-40 flex justify-between items-center">
-						<img src="./assets/project-1-flow.gif" class="w-32 ml-4" alt="">
-						<ol class="text-lg">
-							<li class="fragment">如何准确地控制行走动画与画面滚动</li>
-							<li class="fragment">如何切换主人公的行走状态</li>
-							<li class="fragment">如何切换问题</li>
-						</ol>
-					</div>
-				</section>
-				<section data-transition="convex">
-					<h5>如何准确地控制行走动画与画面滚动</h5>
-					<div class="mx-24 flex justify-between items-center text-2xl">
-						<img src="./assets/project-1-flow.gif" class="w-32 ml-4" alt="">
-						<pre class="w-84" data-id="code-animation">
-							<code class="hljs" data-trim data-line-numbers="5-15"> 
-								moveToQuestion1() {
-									let that = this
-									this.t1.to(hero, {
-											className: heroMoveClass
-									}).to(hero, {  // 人物行走帧
-											duration: 3,
-											x: "115vw",
-											ease: "none"
-									}).to(window, {  // 画面移动帧
-											duration: 3,
-											scrollTo: { x: vw2px(97) },
-											onComplete() {
-													that.startQuestion()
-											}
-									}, "-=2").to(hero, {
-											className: heroStandClass
-									}, "-=1")
-								}
-							</code>
-						</pre>
-					</div>
-					<ul class="text-base">
-						<li class="fragment">用到的主要框架是GSAP</li>
-						<li class="fragment">每一个to都是一个动画帧</li>
-						<li class="fragment">一个动画帧包含了持续时间、变化属性、缓动函数、钩子等要素</li>
-						<li class="fragment">本活动主要有3类动画帧：人物行走帧、画面移动帧、属性类切换帧</li>
+				<div class="flex justify-center items-center">
+					<ul class="shinchou-menu">
+						<li class="slide-in-left" style="animation-delay: 0s;"><a href="#">自我介绍</a></li>
+						<li class="slide-in-right" style="animation-delay: 0.1s;"><a href="#">工作成果</a></li>
+						<li class="slide-in-left" style="animation-delay: 0.2s;"><a href="#">心得体会</a></li>
+						<li class="slide-in-right" style="animation-delay: 0.3s;"><a href="#">未来规划</a></li>
+						<li class="slide-in-left" style="animation-delay: 0.4s;"><a href="#">我的博客</a></li>
 					</ul>
-				</section>
-				<section data-transition="convex">
-					<h5>如何切换主人公的行走状态</h5>
-					<div class="flex justify-between items-center space-x-8 text-lg">
-						<pre class="w-84" data-id="code-animation">
-							<code class="hljs" data-trim data-line-numbers="3-5,15-17"> 
-								moveToQuestion1() {
-									let that = this
-									this.t1.to(hero, {  // 属性类切换帧
-											className: heroMoveClass
-									}).to(hero, {
-											duration: 3,
-											x: "115vw",
-											ease: "none"
-									}).to(window, {
-											duration: 3,
-											scrollTo: { x: vw2px(97) },
-											onComplete() {
-													that.startQuestion()
-											}
-									}, "-=2").to(hero, {
-											className: heroStandClass
-									}, "-=1")
-								}
-							</code>
-						</pre>
-						<pre class="w-84" data-id="code-animation">
-							<code class="hljs" data-trim data-line-numbers="6-14,16-24,26-30"> 
-								.hero {
-									position: absolute;
-									z-index: 2;
-									top: 98vw;
-	
-									&:not(.stand) {
-										.hero-image {
-											display: block;
-										}
-								
-										.hero-stand-image {
-											display: none;
-										}
-									}
-	
-									&.stand {
-										.hero-image {
-											display: none;
-										}
-								
-										.hero-stand-image {
-											display: block;
-										}
-									}
-								
-									&.flipped {
-										img {
-											transform: scaleX(-1);
-										}
-									}
-								}
-							</code>
-						</pre>
-						<div class="w-84 flex flex-col justify-between items-center ml-16">
-							<div class="w-full flex flex-wrap justify-between">
-								<div class="w-24 flex flex-col items-center">
-									<img src="./assets/hero.gif" class="w-10" alt="">
-									<div class="text-xs">heroMoveClass</div>
-								</div>
-								<div class="w-24 flex flex-col items-center">
-									<img src="./assets/stand.png" class="w-10" alt="">
-									<div class="text-xs">heroStandClass</div>
-								</div>
-								<div class="w-24 flex flex-col items-center">
-									<img src="./assets/hero.gif" class="w-10 flipped" alt="">
-									<div class="text-xs">heroFlippedMoveClass</div>
-								</div>
-								<div class="w-24 flex flex-col items-center">
-									<img src="./assets/stand.png" class="w-10 flipped" alt="">
-									<div class="text-xs">heroFlippedStandClass</div>
-								</div>
+				</div>
+			</section>
+			<section>
+				<div class="frame inline-flex">
+					<div class="staggered-flip-in">自我介绍</div>
+					<div class="horizontal-lines">
+						<div class="line"></div>
+						<div class="line"></div>
+					</div>
+					<div class="vertical-lines">
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+					</div>
+					<div class="blingbling"></div>
+				</div>
+			</section>
+			<section>
+				<div class="flex items-center justify-center">
+					<div class="profile-card">
+						<div class="card-borders">
+							<div class="border-top"></div>
+							<div class="border-right"></div>
+							<div class="border-bottom"></div>
+							<div class="border-left"></div>
+						</div>
+						<div class="card-content">
+							<img src="https://i.loli.net/2020/01/12/xhQRgqyB4Oov3S8.jpg" class="avatar">
+							<div class="username">王浩彬</div>
+							<div class="social-icons">
+								<a class="social-icon" href="https://codepen.io/alphardex" target="_blank">
+									<span class="text">前端</span>
+								</a>
+								<a class="social-icon" href="https://github.com/alphardex" target="_blank">
+									<span class="text">动漫</span>
+								</a>
+								<a class="social-icon" href="https://twitter.com/alphardex007" target="_blank">
+									<span class="text">日语</span>
+								</a>
 							</div>
 						</div>
 					</div>
-					<ul class="text-base">
-						<li class="fragment">主人公由2张图片组成：一静一动</li>
-						<li class="fragment">切换行走状态本质上是图片显示的切换</li>
-						<li class="fragment">左右翻转状态是CSS transform的作用</li>
-					</ul>
-				</section>
-				<section data-transition="convex">
-					<h5>如何切换问题</h5>
-					<div class="flex justify-between items-center space-x-8 text-base">
-						<pre class="w-76" data-id="code-animation">
-							<code class="hljs" data-trim> 
-								<div class="question-card" v-if="currentQuestion">
-									<div class="question-card-content">
-										<div class="question-card-title">
-											第<span class="current-question-id">{{currentQuestionId+1}}</span>题/共5题
-										</div>
-										<div class="question-card-body">
-											{{currentQuestion.question}}
-										</div>
-										<ul class="question-card-choices">
-											<li class="question-card-choices__item btn btn-gradient-blue" data-choice="A" v-if="currentQuestion.answer.A" @click="onChoose">
-												A. {{currentQuestion.answer.A}}
-											</li>
-											<li class="question-card-choices__item btn btn-gradient-blue" data-choice="B" v-if="currentQuestion.answer.B" @click="onChoose">
-												B. {{currentQuestion.answer.B}}
-											</li>
-											<li class="question-card-choices__item btn btn-gradient-blue" data-choice="C" v-if="currentQuestion.answer.C" @click="onChoose">
-												C. {{currentQuestion.answer.C}}
-											</li>
-											<li class="question-card-choices__item btn btn-gradient-blue" data-choice="D" v-if="currentQuestion.answer.D" @click="onChoose">
-												D. {{currentQuestion.answer.D}}
-											</li>
-										</ul>
-									</div>
-								</div>
-							</code>
-						</pre>
-						<pre class="w-76" data-id="code-animation">
-							<code class="hljs" data-trim> 
-							startQuestion() {
-									this.t1.pause()
-									this.currentQuestion = this.questions[this.currentQuestionId]
-							},
-							onChoose(e) {
-									const target = e.target
-									target.classList.add('active')
-									const yourAnswerValue = target.dataset.choice
-									this.myAnswers = [...this.myAnswers, yourAnswerValue]
-									const rightAnswerValue = this.currentQuestion.correct
-									this.correctAnswer = rightAnswerValue
-									if (yourAnswerValue === rightAnswerValue) {
-											this.score++
-											this.showDialogRight = true
-									} else {
-											this.showDialogWrong = true
-									}
-							},
-							onContinue() {
-									this.t1.resume()
-									this.currentQuestion = null
-									this.currentQuestionId += 1
-									this.showDialogRight = false
-									this.showDialogWrong = false
-									if (this.currentQuestionId === 5) {
-											this.submit()
-									}
-							},
-							</code>
-						</pre>
-						<pre class="w-76" data-id="code-animation">
-							<code class="hljs" data-trim>
-								var questions = [{
-									question: "bilibili名字的来源是哪部番剧？( )",
-									answer: {
-										A: "魔法禁书目录",
-										B: "某科学的超电磁炮",
-										C: "jojo的奇妙冒险",
-										D: "鬼灭之刃"
-									},
-									correct: "B"
-								}, {
-									question: "明日方舟是哪个公司制作的？( )",
-									answer: {
-										A: "米哈游",
-										B: "腾讯天美工作室",
-										C: "鹰角网络",
-										D: "网易游戏"
-									},
-									correct: "C"
-								}, {
-									question: "以下哪一项是正确的？( )",
-									answer: {
-										A: "我是正确的",
-										B: "A在撒谎",
-										C: "反正B不是正确的",
-										D: "有一个选项在说谎"
-									},
-									correct: "A"
-								}];
-							</code>
-						</pre>
-					</div>
-					<ul class="text-base">
-						<li class="fragment">问题由模板渲染而成</li>
-						<li class="fragment">何为模板渲染？你给我原始数据，我给你处理结果</li>
-						<li class="fragment">开始答题时暂停动画，根据序号找到问题数据并将其渲染</li>
-						<li class="fragment">点击提交按钮时判断对错</li>
-						<li class="fragment">继续答题时将问题的序号+1即可</li>
-					</ul>
-				</section>
-				<section data-transition="convex">
-					<h2>游戏类：垃圾分一分</h2>
-					<img src="./assets/project-2-qrcode.jpg" class="w-64" alt="">
-				</section>
-				<section data-transition="convex">
-					<h2>活动流程</h2>
-					<div class="mx-36 flex justify-between items-center">
-						<img src="./assets/project-2-flow.gif" class="w-32" alt="">
-						<ol class="text-lg">
-							<li class="fragment">倒计时开始，游戏开始</li>
-							<li class="fragment">各种垃圾会不断地从屏幕上方的随机位置落下来</li>
-							<li class="fragment">垃圾落到地面上会消失</li>
-							<li class="fragment">尽可能多地将垃圾拖放到正确的垃圾桶内</li>
-							<li class="fragment">分类正确则加分，错误则减分</li>
-							<li class="fragment">1分钟内达到100分以上即可获得抽奖机会</li>
-						</ol>
-					</div>
-				</section>
-				<section data-transition="convex">
-					<h2>活动要点</h2>
-					<div class="mx-36 flex justify-between items-center">
-						<img src="./assets/project-2-flow.gif" class="w-32" alt="">
-						<ol class="text-lg">
-							<li class="fragment">如何控制垃圾的动画（下落，拖拽等）</li>
-							<li class="fragment">如何让垃圾下落是随机的</li>
-							<li class="fragment">如何判断垃圾是否被正确地归类了</li>
-						</ol>
-					</div>
-				</section>
-				<section data-transition="convex">
-					<h5>如何控制垃圾的动画（下落，拖拽等）</h5>
-					<div class="mx-24 flex justify-between items-center space-x-8 text-2xl">
-						<img src="./assets/project-2-flow.gif" class="w-32 ml-4" alt="">
-						<pre class="w-84" data-id="code-animation">
-							<code class="hljs" data-trim>
-								dropGarbage(slave) {
-									slave.fromTo(target, {
-										y: "-28vw"
-									}, {
-										y: "158vw",
-										duration: 6
-									}).to(target, {
-										duration: 0.6,
-										opacity: 0,
-										className: "garbage gone"
-									});
-								}
-							</code>
-						</pre>
-						<pre class="w-84" data-id="code-animation">
-							<code class="hljs" data-trim>
-								dragGarbages() {
-									Draggable.create(garbageId, {
-										onPress: function () {
-											// 拖拽垃圾时
-											const target = this.target;
-											if (target.classList.contains('gone')) {
-												// 垃圾已经消失则无法继续拖拽
-												this.kill();
-											} else {
-												// 拖拽垃圾时停止下落动画
-												slave.pause();
-											}
-										},
-										onRelease: function () {
-											// 松开时回收垃圾并判断正误
-											vm.recycleGarbage(target)
-											vm.judge(target, trashBin)
-										}
-									});
-								}
-							</code>
-						</pre>
-					</div>
-					<ul class="text-base">
-						<li class="fragment">本项目主要有3个动画帧：下落动画帧、拖放帧、回收动画帧</li>
-						<li class="fragment">垃圾默认是下落状态，当用户开始拖拽垃圾时要暂停下落帧</li>
-						<li class="fragment">松开垃圾时播放回收动画帧，并判断正误</li>
-					</ul>
-				</section>
-				<section data-transition="convex">
-					<h5>如何让垃圾下落是随机的</h5>
-					<div class="mx-24 flex justify-between items-center space-x-8 text-xl">
-						<pre class="w-90" data-id="code-animation">
-							<code class="hljs" data-trim>
-								@function random_range($min, $max) {
-									$rand: random();
-									$random_range: $min + floor($rand * (($max - $min) + 1));
-									@return $random_range;
-								}
-	
-								.garbage {
-									$garbage-count: 40;
-									position: absolute;
-									top: -28vw;
-									left: var(--left-offset);
-									transform: scale(0.75);
-								
-									@for $i from 1 through $garbage-count {
-										&:nth-child(#{$i}) {
-											--left-offset: #{random_range(12, 67) * 1vw};
-										}
-									}
-								}
-							</code>
-						</pre>
-						<pre class="w-90" data-id="code-animation">
-							<code class="hljs" data-trim>
-								const shuffle = ([...arr]) => {
-									let m = arr.length;
-									while (m) {
-										const i = Math.floor(Math.random() * m--);
-										[arr[m], arr[i]] = [arr[i], arr[m]];
-									}
-									return arr;
-								};
-	
-								getRubbish() {
-									// 获取垃圾信息并打乱顺序
-									this.rubbish.list = shuffle(this.rubbish.list);
-								}
-							</code>
-						</pre>
-					</div>
-					<ul class="text-base">
-						<li class="fragment">首先在样式里生成随机的垃圾位置</li>
-						<li class="fragment">然后在逻辑里将垃圾数组打乱顺序</li>
-						<li class="fragment">这样不仅位置是随机的，而且每玩一次垃圾本身也是随机的</li>
-					</ul>
-				</section>
-				<section data-transition="convex">
-					<h5>如何判断垃圾是否被正确地归类了</h5>
-					<div class="mx-12 flex justify-between items-center text-base space-x-8">
-						<pre class="w-100" data-id="code-animation">
-							<code class="hljs" data-trim>
-								// 判断最近的垃圾桶
-								const target = this.target;
-								const distances = [];
-								
-								for (let trashBin of Array.from(trashBins)) {
-									const targetCP = getCenterPoint(target);
-									const trashBinCP = getCenterPoint(trashBin);
-									const distance = calcDistance(targetCP.x, trashBinCP.x, targetCP.y, trashBinCP.y);
-									distances.push(distance);
-								}
-	
-								const minDistance = Math.min(...distances);
-								
-								for (let [idStr, trashBin] of Object.entries(Array.from(trashBins))) {
-									const id = Number(idStr);
-	
-									if (this.hitTest(trashBin) && distances[id] === minDistance) {
-										vm.recycleGarbage(target);
-										vm.judge(target, trashBin);
-									}
-								}
-								
-								// 判断对错
-								if (targetCategory === trashBinCategory) {
-									this.score += this.scorePoint;
-								} else {
-									if (this.score > 0) {
-										this.score -= this.scorePoint / 3;
-									}
-								}
-							</code>
-						</pre>
-						<img src="./assets/project-2-1.png" class="w-32" alt="">
-						<img src="./assets/project-2-2.png" class="w-32" alt="">
-						<img src="./assets/project-2-3.png" class="w-32" alt="">
-					</div>
-					<ul class="text-base">
-						<li class="fragment">首先要判断垃圾和哪个垃圾桶接触了</li>
-						<li class="fragment">计算出四个垃圾桶的中心与垃圾中心之间的距离</li>
-						<li class="fragment">找出最近距离</li>
-						<li class="fragment">选取最近距离的垃圾桶再判断对错</li>
-					</ul>
-				</section>
-				<section data-transition="convex">
-					<h2>滑屏类：常熟七五普法</h2>
-					<img src="./assets/project-3-qrcode.jpg" alt="" class="w-64">
-				</section>
-				<section data-transition="convex">
-					<h2>活动流程</h2>
-					<div class="mx-40 flex justify-between items-center">
-						<img src="./assets/project-3-flow.gif" class="w-32" alt="">
-						<ol class="text-lg ml-12">
-							<li class="fragment">进入页面后开始下滑</li>
-							<li class="fragment">下滑的过程中会不断地出现元素</li>
-							<li class="fragment">元素出现的动画种类很多</li>
-							<li class="fragment">当上滑时元素会消失，再次下滑时出现</li>
-						</ol>
-					</div>
-				</section>
-				<section data-transition="convex">
-					<h2>活动要点</h2>
-					<div class="mx-40 flex justify-between items-center">
-						<img src="./assets/project-3-flow.gif" class="w-32" alt="">
-						<ol class="text-lg pr-24">
-							<li class="fragment">如何实现滚动时的“倒带”动画效果</li>
-							<li class="fragment">如何实现动态渐变文字</li>
-						</ol>
-					</div>
-				</section>
-				<section data-transition="convex">
-					<h5>如何实现滚动时的“倒带”动画效果</h5>
-					<div class="mx-40 flex justify-between items-center text-base">
-						<img src="./assets/project-3-1.gif" class="w-32" alt="">
-						<pre class="w-72" data-id="code-animation">
-							<code class="hljs" data-trim>
-								if (i === 1) {
-									this.animateTrigger({
-										el: imgs[0],
-										scale: 0.4,
-										start: "top bottom-=100px"
-									});
-								} else if (i === 2) {
-									this.animateTrigger({
-										el: imgs[0],
-										x: "30vw",
-										delay: 1,
-										start: "top bottom-=100px"
-									});
-									this.animateTrigger({
-										el: imgs[1],
-										x: "-30vw",
-										delay: 1.2,
-										start: "top bottom-=100px"
-									});
-									this.animateTrigger({
-										el: imgs[2],
-										x: "30vw",
-										delay: 1.4,
-										start: "top bottom-=100px"
-									});
-								} else if (i === 3) {
-									imgs.forEach((img, j) => {
-										this.animateTrigger({
-											el: img,
-											x: "30vw",
-											rotateZ: "-15deg",
-											start: "top bottom-=100px"
-										});
-									});
-								}
-							</code>
-						</pre>
-					</div>
-					<ul class="text-base">
-						<li class="fragment">GSAP于2020年5月底新出的插件——ScrollTrigger</li>
-						<li class="fragment">当用户滚动到一定距离时才触发动画，并且能够倒放</li>
-						<li class="fragment">主要还是动画的实现方式</li>
-					</ul>
-				</section>
-				<section data-transition="convex">
-					<h5>如何实现动态渐变文字</h5>
-					<div class="mx-40 flex justify-between items-center text-base">
-						<img src="./assets/project-3-2.gif" class="w-32" alt="">
-						<pre class="w-72" data-id="code-animation">
-							<code class="hljs" data-trim data-line-numbers="10-13,24-32">
-								.title-grad {
-									&::before,
-									&::after {
-										content: attr(data-text);
-									}
-								
-									&::before {
-										position: absolute;
-										min-width: 84vw; // 防止文字被裁
-										background: var(--title-grad-bg) 0 / 500% no-repeat;
-										color: transparent;
-										background-clip: text;
-										animation: flow 1s linear infinite;
-									}
-								
-									&::after {
-										position: relative;
-										bottom: -0.8vw;
-										color: transparent;
-										background: linear-gradient();
-									}
-								}
-	
-								@keyframes flow {
-									from {
-										background-position: 0;
-									}
-								
-									to {
-										background-position: 100%;
-									}
-								}
-							</code>
-						</pre>
-					</div>
-					<ul class="text-base">
-						<li class="fragment">首先将文字背景设置成渐变背景</li>
-						<li class="fragment">将文字颜色设置为透明，背景裁剪方式设置为按文本裁剪</li>
-						<li class="fragment">这样渐变背景就会被裁剪为文字的形状，再加上动画就完成了</li>
-					</ul>
-				</section>
+				</div>
 			</section>
 			<section>
-				<section data-auto-animate>
-					<h2>心得体会</h2>
-				</section>
-				<section data-auto-animate>
-					<h2>心得体会</h2>
-					<ul class="text-2xl">
-						<li>动画</li>
-						<li>适配与兼容性</li>
-						<li>开发技术选择</li>
-						<li>团队沟通</li>
-						<li>总结</li>
-					</ul>
-				</section>
-				<section data-transition="concave">
-					<h5>动画</h5>
-					<div class="flex items-center justify-between space-x-8">
-						<img class="w-40" src="./assets/kansou-1-1.gif" alt="">
-						<img class="w-40" src="./assets/kansou-1-2.gif" alt="">
-						<img class="w-40" src="./assets/kansou-1-3.gif" alt="">
-						<img class="w-40" src="./assets/kansou-1-4.gif" alt="">
+				<div class="flex justify-center items-center">
+					<div class="land-in font-bold text-3xl leading-loose">大家知道什么是前端开发吗</div>
+				</div>
+			</section>
+			<section>
+				<img src="./assets/intro-1.png" alt="" class="w-200 swing-in-top-fwd">
+			</section>
+			<section>
+				<div class="flex justify-center items-center">
+					<div class="land-in font-bold text-3xl leading-loose">这个精美的用户界面是怎么来的呢</div>
+				</div>
+			</section>
+			<section>
+				<div class="flex flex-wrap items-center justify-center">
+					<img src="./assets/intro-2.png" alt="" class="w-200 fade-in">
+					<div class="mt-6 land-in font-bold text-2xl leading-loose">是前端工程师用HTML+CSS+JavaScript编写而成的</div>
+				</div>
+			</section>
+			<section>
+				<div class="frame inline-flex">
+					<div class="staggered-flip-in">工作成果</div>
+					<div class="horizontal-lines">
+						<div class="line"></div>
+						<div class="line"></div>
 					</div>
-					<ul class="text-base">
-						<li class="fragment">在现实生活中，人们的大脑习惯了被动态的东西所吸引</li>
-						<li class="fragment">适当的动画效果可以为网页添加有价值的交互和反馈，提升用户的情感体验</li>
-						<li class="fragment">前端开发中实现动画有以下方式：CSS、SVG、Canvas、JS动画引擎</li>
-						<li class="fragment">个人经常用CSS实现动画，在掘金上写过一篇文章，链接在此ppt末尾</li>
-					</ul>
-				</section>
-				<section data-transition="concave">
-					<h5>适配与兼容性</h5>
-					<div class="flex items-center justify-between space-x-8">
-						<img class="w-100" src="./assets/kansou-2-1.png" alt="">
-						<img src="./assets/kansou-2-2.png" alt="" class="w-100">
+					<div class="vertical-lines">
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
 					</div>
-					<ul class="text-base">
-						<li class="fragment">在使用一个样式属性或JS语法之前，先要确保大多数系统都支持它</li>
-						<li class="fragment">页面在每个手机中显示各不相同，要确保页面显示都是正常的</li>
-						<li class="fragment">每个系统都有各自的特征，要根据这些特征进行适配</li>
-					</ul>
-				</section>
-				<section data-transition="concave">
-					<h5>一些我遇到的坑</h5>
-					<ul class="text-base">
-						<li class="fragment">ios弹出键盘会使元素错位，解决方法是失去焦点时偏移一点距离</li>
-						<li class="fragment">ios用vue的历史路由模式会导致分享失败，原因是ios的浏览历史机制</li>
-						<li class="fragment">安卓无限加载无法触发，是因为手机大多有虚拟键导致滑不到底</li>
-						<li class="fragment">有部分手机缓存不易清除，这时考虑给文件加上版本号强制清楚缓存</li>
-					</ul>
-				</section>
-				<section data-transition="concave">
-					<h3>遇到兼容性难题怎么办？</h3>
-					<h5 class="text-2xl">一调试，二查</h5>
-				</section>
-				<section data-transition="concave">
-					<h5>一次解决兼容性难题的过程</h5>
-					<div class="flex items-center space-x-12">
-						<img class="w-42" src="./assets/kansou-2-3.jpg" alt="">
-						<img class="w-60" src="./assets/kansou-2-4.png" alt="">
-						<div class="flex flex-col space-y-4">
-							<img class="w-100" src="./assets/kansou-2-5.png" alt="">
-							<img class="w-100" src="./assets/kansou-2-6.png" alt="">
+					<div class="blingbling"></div>
+				</div>
+			</section>
+			<section>
+				<div class="flex justify-center items-center">
+					<div class="chart" id="project-summary" style="width: 600px;height:400px;"></div>
+				</div>
+			</section>
+			<section>
+				<h4>项目示例</h4>
+				<!-- <table class="text-xl">
+					<thead>
+						<tr>
+							<th>种类</th>
+							<th>例子</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>展示</td>
+							<td>大墅尚品、夏日饮品节</td>
+						</tr>
+						<tr>
+							<td>问答</td>
+							<td>高新区答题、梦百合性格测试</td>
+						</tr>
+						<tr>
+							<td>滑屏</td>
+							<td>常熟七五普法、文明健康广告</td>
+						</tr>
+						<tr>
+							<td>游戏</td>
+							<td>垃圾分一分</td>
+						</tr>
+						<tr>
+							<td>点亮</td>
+							<td>禧徕乐周年庆、卡滋贝诺</td>
+						</tr>
+						<tr>
+							<td>投票</td>
+							<td>十佳污防案例、最美城市管家</td>
+						</tr>
+						<tr>
+							<td>小程序</td>
+							<td>家装监理</td>
+						</tr>
+					</tbody>
+				</table> -->
+			</section>
+			<section>
+				<h2>问答类：高新区答题</h2>
+				<img src="./assets/project-1-qrcode.jpg" class="w-64" alt="">
+			</section>
+			<section>
+				<h2>活动流程</h2>
+				<div class="mx-36 flex justify-between items-center">
+					<img src="./assets/project-1-flow.gif" class="w-32" alt="">
+					<ol class="text-lg">
+						<li>主人公在画面左上方出现，开始行走</li>
+						<li>行走至第一个点时停下脚步，划入问题弹窗</li>
+						<li>回答正确与错误则弹出相应的弹窗</li>
+						<li>之后主人公继续行走，画面也会随之移动</li>
+						<li>如此往复答完5题，跳转到海报页面</li>
+						<li>结果会提交到后台，5题全对则增加抽奖机会</li>
+					</ol>
+				</div>
+			</section>
+			<section>
+				<h2>活动要点</h2>
+				<div class="mx-40 flex justify-between items-center">
+					<img src="./assets/project-1-flow.gif" class="w-32 ml-4" alt="">
+					<ol class="text-lg">
+						<li>如何准确地控制行走动画与画面滚动</li>
+						<li>如何切换主人公的行走状态</li>
+						<li>如何切换问题</li>
+					</ol>
+				</div>
+			</section>
+			<section>
+				<h5>如何准确地控制行走动画与画面滚动</h5>
+				<div class="mx-24 flex justify-between items-center text-2xl">
+					<img src="./assets/project-1-flow.gif" class="w-32 ml-4" alt="">
+				</div>
+				<ul class="text-base">
+					<li>用到的主要框架是GSAP</li>
+					<li>每一个to都是一个动画帧</li>
+					<li>一个动画帧包含了持续时间、变化属性、缓动函数、钩子等要素</li>
+					<li>本活动主要有3类动画帧：人物行走帧、画面移动帧、属性类切换帧</li>
+				</ul>
+			</section>
+			<section>
+				<h5>如何切换主人公的行走状态</h5>
+				<div class="flex justify-between items-center space-x-8 text-lg">
+					<div class="w-84 flex flex-col justify-between items-center ml-16">
+						<div class="w-full flex flex-wrap justify-between">
+							<div class="w-24 flex flex-col items-center">
+								<img src="./assets/hero.gif" class="w-10" alt="">
+								<div class="text-xs">heroMoveClass</div>
+							</div>
+							<div class="w-24 flex flex-col items-center">
+								<img src="./assets/stand.png" class="w-10" alt="">
+								<div class="text-xs">heroStandClass</div>
+							</div>
+							<div class="w-24 flex flex-col items-center">
+								<img src="./assets/hero.gif" class="w-10 flipped" alt="">
+								<div class="text-xs">heroFlippedMoveClass</div>
+							</div>
+							<div class="w-24 flex flex-col items-center">
+								<img src="./assets/stand.png" class="w-10 flipped" alt="">
+								<div class="text-xs">heroFlippedStandClass</div>
+							</div>
 						</div>
 					</div>
-					<ul class="text-base">
-						<li class="fragment">梦百合H5活动中，有生成海报这一个功能，大部分手机上都正常，但小部分手机不正常</li>
-						<li class="fragment">于是我加上了控制台，在系统一栏中发现了问题手机的系统版本</li>
-						<li class="fragment">然后上谷歌进行搜索，未果后再上github的issue区搜索该系统版本号</li>
-						<li class="fragment">果不其然有人也遇到了同样的问题，并给出了解决方案</li>
-					</ul>
-				</section>
-				<section data-transition="concave">
-					<h5>开发技术选择</h5>
-					<ul class="text-base">
-						<li class="fragment">目前我开发有2种技术可供选择：传统的php套模板和Vue.js前后端分离</li>
-						<li class="fragment">一般的小项目（投票、点亮等）用php套模板即可快速解决</li>
-						<li class="fragment">遇到数据较复杂且变化大的项目时用Vue.js前后端分离比较适合</li>
-					</ul>
-				</section>
-				<section data-transition="concave">
-					<h5>团队沟通</h5>
-					<ul class="text-base">
-						<li class="fragment">项目进度要及时和产品/客户确认</li>
-						<li class="fragment">多沟通才能正确把握客户的需求</li>
-						<li class="fragment">项目做好要自测，确保基本无误后再交付产品测试</li>
-					</ul>
-				</section>
-				<section data-transition="concave">
-					<h5>总结</h5>
-					<ul class="text-base">
-						<li class="fragment">做完一个活动时，要将遇到的问题统统地总结归纳出来</li>
-						<li class="fragment">这样下次遇到同样的问题时就能立马解决，保证项目的进度了</li>
-					</ul>
-				</section>
+				</div>
+				<ul class="text-base">
+					<li>主人公由2张图片组成：一静一动</li>
+					<li>切换行走状态本质上是图片显示的切换</li>
+					<li>左右翻转状态是CSS transform的作用</li>
+				</ul>
 			</section>
 			<section>
-				<section data-auto-animate>
-					<h2>未来规划</h2>
-				</section>
-				<section data-auto-animate>
-					<h2>未来规划</h2>
-					<ul class="text-2xl">
-						<li>持续学习</li>
-						<li>输出更多干货</li>
-						<li>加强沟通能力</li>
-					</ul>
-				</section>
-				<section data-auto-animate>
-					<h5>持续学习</h5>
-					<ul class="text-2xl">
-						<li class="fragment">前后端分离</li>
-						<li class="fragment">动画、交互</li>
-						<li class="fragment">工程化、自动化</li>
-						<li class="fragment">性能优化</li>
-						<li class="fragment">......</li>
-					</ul>
-				</section>
-				<section data-auto-animate>
-					<h5>输出更多干货</h5>
-					<ul class="text-2xl">
-						<li class="fragment">博客写作</li>
-						<li class="fragment">开源项目</li>
-						<li class="fragment">技术分享</li>
-					</ul>
-				</section>
+				<h5>如何切换问题</h5>
+				<ul class="text-base">
+					<li>问题由模板渲染而成</li>
+					<li>何为模板渲染？你给我原始数据，我给你处理结果</li>
+					<li>开始答题时暂停动画，根据序号找到问题数据并将其渲染</li>
+					<li>点击提交按钮时判断对错</li>
+					<li>继续答题时将问题的序号+1即可</li>
+				</ul>
 			</section>
 			<section>
-				<section data-transition="zoom">
-					<h2>我的博客</h2>
-				</section>
-				<section data-transition="zoom">
-					<img src="./assets/my-blog.png" alt="">
-				</section>
-				<section data-transition="zoom">
-					<h2>博客文章列表</h2>
-					<img src="https://i.loli.net/2020/09/04/pOijkXVf2QGHd3K.png" alt="">
-				</section>
-				<section data-transition="zoom">
-					<h2>点赞最多的文章</h2>
-					<img src="https://i.loli.net/2020/09/04/76ZUHP4mCYfnKpk.png" alt="">
-				</section>
+				<h2>游戏类：垃圾分一分</h2>
+				<img src="./assets/project-2-qrcode.jpg" class="w-64" alt="">
+			</section>
+			<section>
+				<h2>活动流程</h2>
+				<div class="mx-36 flex justify-between items-center">
+					<img src="./assets/project-2-flow.gif" class="w-32" alt="">
+					<ol class="text-lg">
+						<li>倒计时开始，游戏开始</li>
+						<li>各种垃圾会不断地从屏幕上方的随机位置落下来</li>
+						<li>垃圾落到地面上会消失</li>
+						<li>尽可能多地将垃圾拖放到正确的垃圾桶内</li>
+						<li>分类正确则加分，错误则减分</li>
+						<li>1分钟内达到100分以上即可获得抽奖机会</li>
+					</ol>
+				</div>
+			</section>
+			<section>
+				<h2>活动要点</h2>
+				<div class="mx-36 flex justify-between items-center">
+					<img src="./assets/project-2-flow.gif" class="w-32" alt="">
+					<ol class="text-lg">
+						<li>如何控制垃圾的动画（下落，拖拽等）</li>
+						<li>如何让垃圾下落是随机的</li>
+						<li>如何判断垃圾是否被正确地归类了</li>
+					</ol>
+				</div>
+			</section>
+			<section>
+				<h5>如何控制垃圾的动画（下落，拖拽等）</h5>
+				<div class="mx-24 flex justify-between items-center space-x-8 text-2xl">
+					<img src="./assets/project-2-flow.gif" class="w-32 ml-4" alt="">
+				</div>
+				<ul class="text-base">
+					<li>本项目主要有3个动画帧：下落动画帧、拖放帧、回收动画帧</li>
+					<li>垃圾默认是下落状态，当用户开始拖拽垃圾时要暂停下落帧</li>
+					<li>松开垃圾时播放回收动画帧，并判断正误</li>
+				</ul>
+			</section>
+			<section>
+				<h5>如何让垃圾下落是随机的</h5>
+				<ul class="text-base">
+					<li>首先在样式里生成随机的垃圾位置</li>
+					<li>然后在逻辑里将垃圾数组打乱顺序</li>
+					<li>这样不仅位置是随机的，而且每玩一次垃圾本身也是随机的</li>
+				</ul>
+			</section>
+			<section>
+				<h5>如何判断垃圾是否被正确地归类了</h5>
+				<div class="mx-12 flex justify-between items-center text-base space-x-8">
+					<img src="./assets/project-2-1.png" class="w-32" alt="">
+					<img src="./assets/project-2-2.png" class="w-32" alt="">
+					<img src="./assets/project-2-3.png" class="w-32" alt="">
+				</div>
+				<ul class="text-base">
+					<li>首先要判断垃圾和哪个垃圾桶接触了</li>
+					<li>计算出四个垃圾桶的中心与垃圾中心之间的距离</li>
+					<li>找出最近距离</li>
+					<li>选取最近距离的垃圾桶再判断对错</li>
+				</ul>
+			</section>
+			<section>
+				<h2>滑屏类：常熟七五普法</h2>
+				<img src="./assets/project-3-qrcode.jpg" alt="" class="w-64">
+			</section>
+			<section>
+				<h2>活动流程</h2>
+				<div class="mx-40 flex justify-between items-center">
+					<img src="./assets/project-3-flow.gif" class="w-32" alt="">
+					<ol class="text-lg ml-12">
+						<li>进入页面后开始下滑</li>
+						<li>下滑的过程中会不断地出现元素</li>
+						<li>元素出现的动画种类很多</li>
+						<li>当上滑时元素会消失，再次下滑时出现</li>
+					</ol>
+				</div>
+			</section>
+			<section>
+				<h2>活动要点</h2>
+				<div class="mx-40 flex justify-between items-center">
+					<img src="./assets/project-3-flow.gif" class="w-32" alt="">
+					<ol class="text-lg pr-24">
+						<li>如何实现滚动时的“倒带”动画效果</li>
+						<li>如何实现动态渐变文字</li>
+					</ol>
+				</div>
+			</section>
+			<section>
+				<h5>如何实现滚动时的“倒带”动画效果</h5>
+				<div class="mx-40 flex justify-between items-center text-base">
+					<img src="./assets/project-3-1.gif" class="w-32" alt="">
+				</div>
+				<ul class="text-base">
+					<li>GSAP于2020年5月底新出的插件——ScrollTrigger</li>
+					<li>当用户滚动到一定距离时才触发动画，并且能够倒放</li>
+					<li>主要还是动画的实现方式</li>
+				</ul>
+			</section>
+			<section>
+				<h5>如何实现动态渐变文字</h5>
+				<div class="mx-40 flex justify-between items-center text-base">
+					<img src="./assets/project-3-2.gif" class="w-32" alt="">
+				</div>
+				<ul class="text-base">
+					<li>首先将文字背景设置成渐变背景</li>
+					<li>将文字颜色设置为透明，背景裁剪方式设置为按文本裁剪</li>
+					<li>这样渐变背景就会被裁剪为文字的形状，再加上动画就完成了</li>
+				</ul>
+			</section>
+			<section>
+				<div class="frame inline-flex">
+					<div class="staggered-flip-in">心得体会</div>
+					<div class="horizontal-lines">
+						<div class="line"></div>
+						<div class="line"></div>
+					</div>
+					<div class="vertical-lines">
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+					</div>
+					<div class="blingbling"></div>
+				</div>
+			</section>
+			<section>
+				<h5>动画</h5>
+				<div class="flex items-center justify-between space-x-8">
+					<img class="w-40" src="./assets/kansou-1-1.gif" alt="">
+					<img class="w-40" src="./assets/kansou-1-2.gif" alt="">
+					<img class="w-40" src="./assets/kansou-1-3.gif" alt="">
+					<img class="w-40" src="./assets/kansou-1-4.gif" alt="">
+				</div>
+				<ul class="text-base">
+					<li>在现实生活中，人们的大脑习惯了被动态的东西所吸引</li>
+					<li>适当的动画效果可以为网页添加有价值的交互和反馈，提升用户的情感体验</li>
+					<li>前端开发中实现动画有以下方式：CSS、SVG、Canvas、JS动画引擎</li>
+					<li>个人经常用CSS实现动画，在掘金上写过一篇文章，链接在此ppt末尾</li>
+				</ul>
+			</section>
+			<section>
+				<h5>适配与兼容性</h5>
+				<div class="flex items-center justify-between space-x-8">
+					<img class="w-100" src="./assets/kansou-2-1.png" alt="">
+					<img src="./assets/kansou-2-2.png" alt="" class="w-100">
+				</div>
+				<ul class="text-base">
+					<li>在使用一个样式属性或JS语法之前，先要确保大多数系统都支持它</li>
+					<li>页面在每个手机中显示各不相同，要确保页面显示都是正常的</li>
+					<li>每个系统都有各自的特征，要根据这些特征进行适配</li>
+				</ul>
+			</section>
+			<section>
+				<h5>一些我遇到的坑</h5>
+				<ul class="text-base">
+					<li>ios弹出键盘会使元素错位，解决方法是失去焦点时偏移一点距离</li>
+					<li>ios用vue的历史路由模式会导致分享失败，原因是ios的浏览历史机制</li>
+					<li>安卓无限加载无法触发，是因为手机大多有虚拟键导致滑不到底</li>
+					<li>有部分手机缓存不易清除，这时考虑给文件加上版本号强制清楚缓存</li>
+				</ul>
+			</section>
+			<section>
+				<h3>遇到兼容性难题怎么办？</h3>
+				<h5 class="text-2xl">一调试，二查</h5>
+			</section>
+			<section>
+				<h5>一次解决兼容性难题的过程</h5>
+				<div class="flex items-center space-x-12">
+					<img class="w-42" src="./assets/kansou-2-3.jpg" alt="">
+					<img class="w-60" src="./assets/kansou-2-4.png" alt="">
+					<div class="flex flex-col space-y-4">
+						<img class="w-100" src="./assets/kansou-2-5.png" alt="">
+						<img class="w-100" src="./assets/kansou-2-6.png" alt="">
+					</div>
+				</div>
+				<ul class="text-base">
+					<li>梦百合H5活动中，有生成海报这一个功能，大部分手机上都正常，但小部分手机不正常</li>
+					<li>于是我加上了控制台，在系统一栏中发现了问题手机的系统版本</li>
+					<li>然后上谷歌进行搜索，未果后再上github的issue区搜索该系统版本号</li>
+					<li>果不其然有人也遇到了同样的问题，并给出了解决方案</li>
+				</ul>
+			</section>
+			<section>
+				<h5>团队沟通</h5>
+				<ul class="text-base">
+					<li>项目进度要及时和产品/客户确认</li>
+					<li>多沟通才能正确把握客户的需求</li>
+					<li>项目做好要自测，确保基本无误后再交付产品测试</li>
+					<li>每一个项目都是团队成员共同努力奋斗而成的结晶，因此团队沟通无比重要</li>
+				</ul>
+			</section>
+			<section>
+				<h5>总结</h5>
+				<ul class="text-base">
+					<li>做完一个活动时，要将遇到的问题统统地总结归纳出来</li>
+					<li>这样下次遇到同样的问题时就能立马解决，保证项目的进度了</li>
+				</ul>
+			</section>
+			<section>
+				<div class="frame inline-flex">
+					<div class="staggered-flip-in">未来规划</div>
+					<div class="horizontal-lines">
+						<div class="line"></div>
+						<div class="line"></div>
+					</div>
+					<div class="vertical-lines">
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+					</div>
+					<div class="blingbling"></div>
+				</div>
+			</section>
+			<section>
+				<h5>持续学习</h5>
+				<ul class="text-2xl">
+					<li>前后端分离</li>
+					<li>动画、交互</li>
+					<li>工程化、自动化</li>
+					<li>性能优化</li>
+					<li>......</li>
+				</ul>
+			</section>
+			<section>
+				<h5>输出更多干货</h5>
+				<ul class="text-2xl">
+					<li>博客写作</li>
+					<li>开源项目</li>
+					<li>技术分享</li>
+				</ul>
+			</section>
+			<section>
+				<div class="frame inline-flex">
+					<div class="staggered-flip-in">我的博客</div>
+					<div class="horizontal-lines">
+						<div class="line"></div>
+						<div class="line"></div>
+					</div>
+					<div class="vertical-lines">
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+					</div>
+					<div class="blingbling"></div>
+				</div>
+			</section>
+			<section data-transition="zoom">
+				<img src="./assets/my-blog.png" alt="">
+				<img src="https://i.loli.net/2020/09/04/pOijkXVf2QGHd3K.png" alt="">
 			</section>
 			<section data-transition="zoom">
 				<div class="neon">Thank you!</div>
@@ -896,10 +516,57 @@
 		// - https://revealjs.com/config/
 		Reveal.initialize({
 			hash: true,
-
+			transition: 'none',
 			// Learn about plugins: https://revealjs.com/plugins/
 			plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
 		});
+
+		// utils
+		const random = (min, max) =>
+			min + Math.floor(Math.random() * (max - min + 1));
+
+		// shinchou-menu
+		let shinchouMenuLinks = document.querySelectorAll(".shinchou-menu li a");
+		shinchouMenuLinks.forEach(link => {
+			let letters = link.textContent.split("");
+			link.textContent = "";
+			letters.forEach((letter, i) => {
+				let span = document.createElement("span");
+				span.textContent = letter;
+				if (i < 2) {
+					span.className = "highlight";
+				}
+				span.style.transitionDelay = `${i / 10}s`;
+				link.append(span);
+			});
+		});
+
+		// frame-text-reveal
+		let staggeredFlipInTexts = document.querySelectorAll(".staggered-flip-in");
+		staggeredFlipInTexts.forEach(text => {
+			let letters = text.textContent.split("");
+			text.textContent = "";
+			letters.forEach((letter, i) => {
+				let span = document.createElement("span");
+				span.textContent = letter;
+				span.style.animationDelay = `${i / 10}s`;
+				text.append(span);
+			});
+		});
+
+		// staggered-landin-text
+		let landInTexts = document.querySelectorAll(".land-in");
+		landInTexts.forEach(landInText => {
+			let letters = landInText.textContent.split("");
+			landInText.textContent = "";
+			letters.forEach((letter, i) => {
+				let span = document.createElement("span");
+				span.textContent = letter;
+				span.style.animationDelay = `${i * 0.05}s`;
+				landInText.append(span);
+			});
+		});
+
 
 		// echarts
 		const projectSummaryChart = echarts.init(document.getElementById('project-summary'))
@@ -910,7 +577,7 @@
 			title: {
 				text: '项目数量统计',
 				textStyle: {
-					color: 'white'
+					color: 'black'
 				}
 			},
 			series: [{
