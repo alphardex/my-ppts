@@ -1,10 +1,14 @@
 :root {
   --grey-color: #7f8c8d;
+  --light-blue-grad: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
 }
 
 body {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f3e7e9), color-stop(99%, #e3eeff), to(#e3eeff)) !important;
-  background: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%) !important;
+  background: var(--light-blue-grad) !important;
+}
+
+.w-120 {
+  width: 30rem;
 }
 
 .w-200 {
@@ -62,6 +66,10 @@ ol {
 
 .qrcode-img {
   width: 7.8rem;
+}
+
+.gauge {
+  --gauge-bg: var(--light-blue-grad);
 }
 
 .slide-bar {

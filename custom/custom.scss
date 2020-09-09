@@ -1,12 +1,17 @@
 :root {
   --grey-color: #7f8c8d;
+  --light-blue-grad: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
 }
 
 body {
-  background: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%) !important;
+  background: var(--light-blue-grad) !important;
 }
 
 // utils
+
+.w-120 {
+  width: 30rem;
+}
 
 .w-200 {
   width: 50rem;
@@ -68,6 +73,10 @@ ol {
   &-img {
     width: 7.8rem;
   }
+}
+
+.gauge {
+  --gauge-bg: var(--light-blue-grad);
 }
 
 // slide-bar
