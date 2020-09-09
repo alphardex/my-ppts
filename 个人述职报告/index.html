@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="../aqua.css/aqua.min.css">
 	<link rel="stylesheet" href="../reveal.js/dist/reset.css" />
 	<link rel="stylesheet" href="../reveal.js/dist/reveal.css" />
+	<link rel="stylesheet" href="../html5-device-mockups/device-mockups.min.css">
 	<link rel="stylesheet" href="../custom/custom.css">
 </head>
 
@@ -217,83 +218,135 @@
 				</div>
 			</section>
 			<section>
-				<h2>活动流程</h2>
-				<div class="mx-36 flex justify-between items-center">
-					<img src="./assets/project-1-flow.gif" class="w-32" alt="">
-					<ol class="text-lg">
-						<li>主人公在画面左上方出现，开始行走</li>
-						<li>行走至第一个点时停下脚步，划入问题弹窗</li>
-						<li>回答正确与错误则弹出相应的弹窗</li>
-						<li>之后主人公继续行走，画面也会随之移动</li>
-						<li>如此往复答完5题，跳转到海报页面</li>
-						<li>结果会提交到后台，5题全对则增加抽奖机会</li>
-					</ol>
+				<div class="qrcode slide-in-right" style="animation-delay: 1.2s;">
+					<div class="qrcode-text">扫码即可体验该活动哦~</div>
+					<img class="qrcode-img" src="./assets/project-1-qrcode.jpg" alt="">
 				</div>
-			</section>
-			<section>
-				<h2>活动要点</h2>
-				<div class="mx-40 flex justify-between items-center">
-					<img src="./assets/project-1-flow.gif" class="w-32 ml-4" alt="">
-					<ol class="text-lg">
-						<li>如何准确地控制行走动画与画面滚动</li>
-						<li>如何切换主人公的行走状态</li>
-						<li>如何切换问题</li>
-					</ol>
+				<div class="flex justify-center items-center">
+					<div class="land-in font-bold text-3xl leading-loose">高新区答题活动</div>
 				</div>
-			</section>
-			<section>
-				<h5>如何准确地控制行走动画与画面滚动</h5>
-				<div class="mx-24 flex justify-between items-center text-2xl">
-					<img src="./assets/project-1-flow.gif" class="w-32 ml-4" alt="">
-				</div>
-				<ul class="text-base">
-					<li>用到的主要框架是GSAP</li>
-					<li>每一个to都是一个动画帧</li>
-					<li>一个动画帧包含了持续时间、变化属性、缓动函数、钩子等要素</li>
-					<li>本活动主要有3类动画帧：人物行走帧、画面移动帧、属性类切换帧</li>
-				</ul>
-			</section>
-			<section>
-				<h5>如何切换主人公的行走状态</h5>
-				<div class="flex justify-between items-center space-x-8 text-lg">
-					<div class="w-84 flex flex-col justify-between items-center ml-16">
-						<div class="w-full flex flex-wrap justify-between">
-							<div class="w-24 flex flex-col items-center">
-								<img src="./assets/hero.gif" class="w-10" alt="">
-								<div class="text-xs">heroMoveClass</div>
+				<div class="mx-20 flex justify-between">
+					<div class="device-wrapper fade-in" style="animation-delay: 0.3s;">
+						<div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+							<div class="screen">
+								<img src="./assets/project-1-flow.gif" alt="">
 							</div>
-							<div class="w-24 flex flex-col items-center">
-								<img src="./assets/stand.png" class="w-10" alt="">
-								<div class="text-xs">heroStandClass</div>
-							</div>
-							<div class="w-24 flex flex-col items-center">
-								<img src="./assets/hero.gif" class="w-10 flipped" alt="">
-								<div class="text-xs">heroFlippedMoveClass</div>
-							</div>
-							<div class="w-24 flex flex-col items-center">
-								<img src="./assets/stand.png" class="w-10 flipped" alt="">
-								<div class="text-xs">heroFlippedStandClass</div>
-							</div>
+							<div class="button"></div>
+						</div>
+					</div>
+					<div class="flex flex-col text-left leading-relaxed">
+						<div class="fade-in-bottom" style="animation-delay: 0.6s;">
+							<div class="font-bold">活动特色</div>
+							<div>横版卷轴类答题闯关活动，给人一种身临其境的感觉，<br>完美体现了“安全生产”这一主题</div>
+						</div>
+						<div class="fade-in-bottom" style="animation-delay: 0.7s;">
+							<div class="font-bold">活动流程</div>
+							<ol class="text-base">
+								<li>主人公在画面左上方出现，开始行走</li>
+								<li>行走至第一个点时停下脚步，划入问题弹窗</li>
+								<li>回答正确与错误则弹出相应的弹窗</li>
+								<li>之后主人公继续行走，画面也会随之移动</li>
+								<li>如此往复答完5题，跳转到海报页面</li>
+								<li>结果会提交到后台，5题全对则增加抽奖机会</li>
+							</ol>
+						</div>
+						<div class="fade-in-bottom" style="animation-delay: 0.8s;">
+							<div class="font-bold">活动要点</div>
+							<ol class="text-base">
+								<li>如何实现在一张大图上行走和闯关</li>
+								<li>如何切换主人公的行走状态</li>
+								<li>如何切换问题</li>
+							</ol>
 						</div>
 					</div>
 				</div>
-				<ul class="text-base">
-					<li>主人公由2张图片组成：一静一动</li>
-					<li>切换行走状态本质上是图片显示的切换</li>
-					<li>左右翻转状态是CSS transform的作用</li>
-				</ul>
 			</section>
 			<section>
-				<h5>如何切换问题</h5>
-				<ul class="text-base">
-					<li>问题由模板渲染而成</li>
-					<li>何为模板渲染？你给我原始数据，我给你处理结果</li>
-					<li>开始答题时暂停动画，根据序号找到问题数据并将其渲染</li>
-					<li>点击提交按钮时判断对错</li>
-					<li>继续答题时将问题的序号+1即可</li>
-				</ul>
+				<div class="qrcode slide-in-right" style="animation-delay: 1.2s;">
+					<div class="qrcode-text">扫码即可体验该活动哦~</div>
+					<img class="qrcode-img" src="./assets/project-2-qrcode.jpg" alt="">
+				</div>
+				<div class="flex justify-center items-center">
+					<div class="land-in font-bold text-3xl leading-loose">垃圾分一分活动</div>
+				</div>
+				<div class="mx-20 flex justify-between">
+					<div class="device-wrapper fade-in" style="animation-delay: 0.3s;">
+						<div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+							<div class="screen">
+								<img src="./assets/project-2-flow.gif" alt="">
+							</div>
+							<div class="button"></div>
+						</div>
+					</div>
+					<div class="flex flex-col text-left leading-relaxed">
+						<div class="fade-in-bottom" style="animation-delay: 0.6s;">
+							<div class="font-bold">活动特色</div>
+							<div>横版卷轴类答题闯关活动，给人一种身临其境的感觉，<br>完美体现了“安全生产”这一主题</div>
+						</div>
+						<div class="fade-in-bottom" style="animation-delay: 0.7s;">
+							<div class="font-bold">活动流程</div>
+							<ol class="text-base">
+								<li>倒计时开始，游戏开始</li>
+								<li>各种垃圾会不断地从屏幕上方的随机位置落下来</li>
+								<li>垃圾落到地面上会消失</li>
+								<li>尽可能多地将垃圾拖放到正确的垃圾桶内</li>
+								<li>分类正确则加分，错误则减分</li>
+								<li>1分钟内达到100分以上即可获得抽奖机会</li>
+							</ol>
+						</div>
+						<div class="fade-in-bottom" style="animation-delay: 0.8s;">
+							<div class="font-bold">活动要点</div>
+							<ol class="text-base">
+								<li>如何控制垃圾的动画（下落，拖拽等）</li>
+								<li>如何让垃圾下落是随机的</li>
+								<li>如何判断垃圾是否被正确地归类了</li>
+							</ol>
+						</div>
+					</div>
+				</div>
 			</section>
 			<section>
+				<div class="qrcode slide-in-right" style="animation-delay: 1.2s;">
+					<div class="qrcode-text">扫码即可体验该活动哦~</div>
+					<img class="qrcode-img" src="./assets/project-3-qrcode.jpg" alt="">
+				</div>
+				<div class="flex justify-center items-center">
+					<div class="land-in font-bold text-3xl leading-loose">常熟普法活动</div>
+				</div>
+				<div class="mx-20 flex justify-between">
+					<div class="device-wrapper fade-in" style="animation-delay: 0.3s;">
+						<div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+							<div class="screen">
+								<img src="./assets/project-3-flow.gif" alt="">
+							</div>
+							<div class="button"></div>
+						</div>
+					</div>
+					<div class="flex flex-col text-left leading-relaxed">
+						<div class="fade-in-bottom" style="animation-delay: 0.6s;">
+							<div class="font-bold">活动特色</div>
+							<div>横版卷轴类答题闯关活动，给人一种身临其境的感觉，<br>完美体现了“安全生产”这一主题</div>
+						</div>
+						<div class="fade-in-bottom" style="animation-delay: 0.7s;">
+							<div class="font-bold">活动流程</div>
+							<ol class="text-base">
+								<li>进入页面后开始下滑</li>
+								<li>下滑的过程中会不断地出现元素</li>
+								<li>元素出现的动画种类很多</li>
+								<li>当上滑时元素会消失，再次下滑时出现</li>
+							</ol>
+						</div>
+						<div class="fade-in-bottom" style="animation-delay: 0.8s;">
+							<div class="font-bold">活动要点</div>
+							<ol class="text-base">
+								<li>如何实现滚动时的“倒带”动画效果</li>
+								<li>如何实现动态渐变文字</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- <section>
 				<h2>活动流程</h2>
 				<div class="mx-36 flex justify-between items-center">
 					<img src="./assets/project-2-flow.gif" class="w-32" alt="">
@@ -350,8 +403,8 @@
 					<li>找出最近距离</li>
 					<li>选取最近距离的垃圾桶再判断对错</li>
 				</ul>
-			</section>
-			<section>
+			</section> -->
+			<!-- <section>
 				<h2>活动流程</h2>
 				<div class="mx-40 flex justify-between items-center">
 					<img src="./assets/project-3-flow.gif" class="w-32" alt="">
@@ -394,7 +447,7 @@
 					<li>将文字颜色设置为透明，背景裁剪方式设置为按文本裁剪</li>
 					<li>这样渐变背景就会被裁剪为文字的形状，再加上动画就完成了</li>
 				</ul>
-			</section>
+			</section> -->
 			<section>
 				<div class="frame inline-flex">
 					<div class="staggered-flip-in">心得体会</div>
@@ -412,42 +465,43 @@
 				</div>
 			</section>
 			<section>
-				<h5>动画</h5>
-				<div class="flex items-center justify-between space-x-8">
-					<img class="w-40" src="./assets/kansou-1-1.gif" alt="">
-					<img class="w-40" src="./assets/kansou-1-2.gif" alt="">
-					<img class="w-40" src="./assets/kansou-1-3.gif" alt="">
-					<img class="w-40" src="./assets/kansou-1-4.gif" alt="">
+				<div class="flex flex-col items-center justify-center space-y-4">
+					<div class="land-in font-bold text-3xl leading-loose">动画，为前端赋予灵魂</div>
+					<div class="flex items-center justify-between space-x-8">
+						<img class="w-50 h-90 slide-in-top" src="./assets/kansou-1-1.gif" alt="" style="animation-delay: 0.5s;">
+						<img class="w-50 h-90 slide-in-bottom" src="./assets/kansou-1-2.gif" alt="" style="animation-delay: 0.6s;">
+						<img class="w-50 h-90 slide-in-top" src="./assets/kansou-1-3.gif" alt="" style="animation-delay: 0.7s;">
+						<img class="w-50 h-90 slide-in-bottom" src="./assets/kansou-1-4.gif" alt="" style="animation-delay: 0.8s;">
+					</div>
+					<ul class="text-base leading-relaxed text-left">
+						<li class="fade-in-bottom" style="animation-delay: 1.1s;">在现实生活中，人们的大脑习惯了被动态的东西所吸引</li>
+						<li class="fade-in-bottom" style="animation-delay: 1.2s;">适当的动画效果可以为网页添加有价值的交互和反馈，提升用户的情感体验</li>
+						<li class="fade-in-bottom" style="animation-delay: 1.3s;">前端开发中实现动画有以下方式：CSS、SVG、Canvas、JS动画引擎</li>
+						<li class="fade-in-bottom" style="animation-delay: 1.4s;">个人经常用CSS实现动画，在掘金上写过一篇文章，链接在此ppt末尾</li>
+					</ul>
 				</div>
-				<ul class="text-base">
-					<li>在现实生活中，人们的大脑习惯了被动态的东西所吸引</li>
-					<li>适当的动画效果可以为网页添加有价值的交互和反馈，提升用户的情感体验</li>
-					<li>前端开发中实现动画有以下方式：CSS、SVG、Canvas、JS动画引擎</li>
-					<li>个人经常用CSS实现动画，在掘金上写过一篇文章，链接在此ppt末尾</li>
-				</ul>
 			</section>
 			<section>
-				<h5>适配与兼容性</h5>
-				<div class="flex items-center justify-between space-x-8">
-					<img class="w-100" src="./assets/kansou-2-1.png" alt="">
-					<img src="./assets/kansou-2-2.png" alt="" class="w-100">
+				<div class="flex flex-col items-center justify-center space-y-4">
+					<div class="land-in font-bold text-3xl leading-loose">适配与兼容性，必须做到完美无缺</div>
+					<div class="flex items-center justify-between space-x-8">
+						<div class="flex flex-col items-center">
+							<img class="w-100 h-60 slide-in-left" src="./assets/kansou-2-1.png" alt="" style="animation-delay: 0.5s;">
+							<div class="mt-4 fade-in text-sm" style="animation-delay: 0.8s;">样式属性兼容性表</div>
+						</div>
+						<div class="flex flex-col items-center">
+							<img class="w-100 h-60 slide-in-right" src="./assets/kansou-2-2.png" alt="" style="animation-delay: 0.6s;">
+							<div class="mt-4 fade-in text-sm" style="animation-delay: 0.9s;">同一张页面在不同手机屏幕上的显示</div>
+						</div>
+					</div>
+					<ul class="text-base leading-relaxed text-left">
+						<li class="fade-in-bottom" style="animation-delay: 0.8s;">在前端开发的过程中，适配与兼容性是必须要考虑的问题</li>
+						<li class="fade-in-bottom" style="animation-delay: 0.9s;">页面在每个手机中显示各不相同，要确保页面在每个手机上的显示都是正常的</li>
+						<li class="fade-in-bottom" style="animation-delay: 1s;">每个系统都有各自的特征，要根据这些特征进行适配，杜绝因系统本身而产生的问题</li>
+					</ul>
 				</div>
-				<ul class="text-base">
-					<li>在使用一个样式属性或JS语法之前，先要确保大多数系统都支持它</li>
-					<li>页面在每个手机中显示各不相同，要确保页面显示都是正常的</li>
-					<li>每个系统都有各自的特征，要根据这些特征进行适配</li>
-				</ul>
 			</section>
-			<section>
-				<h5>一些我遇到的坑</h5>
-				<ul class="text-base">
-					<li>ios弹出键盘会使元素错位，解决方法是失去焦点时偏移一点距离</li>
-					<li>ios用vue的历史路由模式会导致分享失败，原因是ios的浏览历史机制</li>
-					<li>安卓无限加载无法触发，是因为手机大多有虚拟键导致滑不到底</li>
-					<li>有部分手机缓存不易清除，这时考虑给文件加上版本号强制清楚缓存</li>
-				</ul>
-			</section>
-			<section>
+			<!-- <section>
 				<h3>遇到兼容性难题怎么办？</h3>
 				<h5 class="text-2xl">一调试，二查</h5>
 			</section>
@@ -467,22 +521,28 @@
 					<li>然后上谷歌进行搜索，未果后再上github的issue区搜索该系统版本号</li>
 					<li>果不其然有人也遇到了同样的问题，并给出了解决方案</li>
 				</ul>
+			</section> -->
+			<section>
+				<div class="flex flex-col items-center justify-center space-y-4">
+					<div class="land-in font-bold text-3xl leading-loose">团队沟通，是必须要保证的</div>
+					<img class="w-100 fade-in shadow" src="./assets/teamwork.png" alt="" style="animation-delay: 0.6s;">
+					<ul class="text-base leading-relaxed text-left">
+						<li class="fade-in-bottom" style="animation-delay: 0.8s;">项目进度要及时和产品/客户确认</li>
+						<li class="fade-in-bottom" style="animation-delay: 0.9s;">多沟通才能正确把握客户的需求</li>
+						<li class="fade-in-bottom" style="animation-delay: 1s;">项目做好要自测，确保基本无误后再交付产品测试</li>
+						<li class="fade-in-bottom" style="animation-delay: 1.1s;">每一个项目都是团队成员共同努力奋斗而成的结晶，因此团队沟通无比重要</li>
+					</ul>
+				</div>
 			</section>
 			<section>
-				<h5>团队沟通</h5>
-				<ul class="text-base">
-					<li>项目进度要及时和产品/客户确认</li>
-					<li>多沟通才能正确把握客户的需求</li>
-					<li>项目做好要自测，确保基本无误后再交付产品测试</li>
-					<li>每一个项目都是团队成员共同努力奋斗而成的结晶，因此团队沟通无比重要</li>
-				</ul>
-			</section>
-			<section>
-				<h5>总结</h5>
-				<ul class="text-base">
-					<li>做完一个活动时，要将遇到的问题统统地总结归纳出来</li>
-					<li>这样下次遇到同样的问题时就能立马解决，保证项目的进度了</li>
-				</ul>
+				<div class="flex flex-col items-center justify-center space-y-4">
+					<div class="land-in font-bold text-3xl leading-loose">要定期总结，温故而知新</div>
+					<img class="w-100 fade-in shadow" src="./assets/summary.png" alt="" style="animation-delay: 0.6s;">
+					<ul class="text-base leading-relaxed text-left">
+						<li class="fade-in-bottom" style="animation-delay: 0.8s;">做完一个活动时，要将遇到的问题统统地总结归纳出来</li>
+						<li class="fade-in-bottom" style="animation-delay: 0.9s;">这样下次遇到同样的问题时就能立马解决，保证项目的进度了</li>
+					</ul>
+				</div>
 			</section>
 			<section>
 				<div class="frame inline-flex">
@@ -501,22 +561,32 @@
 				</div>
 			</section>
 			<section>
-				<h5>持续学习</h5>
-				<ul class="text-2xl">
-					<li>前后端分离</li>
-					<li>动画、交互</li>
-					<li>工程化、自动化</li>
-					<li>性能优化</li>
-					<li>......</li>
-				</ul>
+				<div class="flex flex-col items-center justify-center space-y-4">
+					<div class="inline-flex font-bold text-3xl cross-bar-glitch" data-slice="20">
+						持续学习
+					</div>
+					<img class="w-100 fade-in shadow" src="./assets/learning.png" alt="" style="animation-delay: 0.6s;">
+					<ul class="text-left text-2xl leading-relaxed">
+						<li class="slide-in-left" style="animation-delay: 0.8s;">前后端分离</li>
+						<li class="slide-in-right" style="animation-delay: 0.9s;">动画、交互</li>
+						<li class="slide-in-left" style="animation-delay: 1s;">工程化、自动化</li>
+						<li class="slide-in-right" style="animation-delay: 1.1s;">性能优化</li>
+						<li class="slide-in-right" style="animation-delay: 1.2s;">......</li>
+					</ul>
+				</div>
 			</section>
 			<section>
-				<h5>输出更多干货</h5>
-				<ul class="text-2xl">
-					<li>博客写作</li>
-					<li>开源项目</li>
-					<li>技术分享</li>
-				</ul>
+				<div class="flex flex-col items-center justify-center space-y-4">
+					<div class="inline-flex font-bold text-3xl cross-bar-glitch" data-slice="20">
+						输出更多干货
+					</div>
+					<img class="w-100 fade-in shadow" src="./assets/output.png" alt="" style="animation-delay: 0.6s;">
+					<ul class="text-left text-2xl leading-relaxed">
+						<li class="slide-in-left" style="animation-delay: 0.8s;">博客写作</li>
+						<li class="slide-in-right" style="animation-delay: 0.9s;">开源项目</li>
+						<li class="slide-in-left" style="animation-delay: 1s;">技术分享</li>
+					</ul>
+				</div>
 			</section>
 			<section>
 				<div class="frame inline-flex">
@@ -534,12 +604,14 @@
 					<div class="blingbling"></div>
 				</div>
 			</section>
-			<section data-transition="zoom">
-				<img src="./assets/my-blog.png" alt="">
-				<img src="https://i.loli.net/2020/09/04/pOijkXVf2QGHd3K.png" alt="">
+			<section>
+				<img src="./assets/my-blog.png" alt="" class="w-100">
+				<!-- <img src="https://i.loli.net/2020/09/04/pOijkXVf2QGHd3K.png" alt=""> -->
 			</section>
-			<section data-transition="zoom">
-				<div class="neon">Thank you!</div>
+			<section>
+				<div class="inline-flex font-bold text-6xl cross-bar-glitch" data-slice="20">
+					谢谢大家！
+				</div>
 			</section>
 		</div>
 	</div>
@@ -605,7 +677,6 @@
 				landInText.append(span);
 			});
 		});
-
 
 		// echarts
 		const projectSummaryChart = echarts.init(document.getElementById('project-summary'))
@@ -673,6 +744,38 @@
 				text.append(span);
 			});
 		});
+
+		// cross-bar-glitch-text
+		let crossBarGlitchTexts = document.querySelectorAll(".cross-bar-glitch");
+		crossBarGlitchTexts.forEach(text => {
+			let content = text.textContent;
+			text.textContent = "";
+			// Glitch Text
+			let slice = (text).dataset.slice;
+			let glitchText = document.createElement("div");
+			glitchText.className = "glitch";
+			(glitchText).style.setProperty("--slice-count", slice);
+			for (let i = 0; i <= Number(slice); i++) {
+				let span = document.createElement("span");
+				span.textContent = content;
+				span.style.setProperty("--i", `${i + 1}`);
+				if (i !== Number(slice)) {
+					span.style.animationDelay = `${800 + random(100, 300)}ms`;
+				}
+				glitchText.append(span);
+			}
+			text.appendChild(glitchText);
+			// Cross Bars
+			let bars = document.createElement("div");
+			bars.className = "bars";
+			for (let i = 0; i < 5; i++) {
+				let bar = document.createElement("div");
+				bar.className = "bar";
+				bars.append(bar);
+			}
+			text.append(bars);
+		});
+
 	</script>
 </body>
 
