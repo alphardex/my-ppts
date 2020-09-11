@@ -913,11 +913,16 @@ header .subtitle::before {
 }
 
 .masonry__item .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 14px;
+  font-weight: bold;
+  line-height: 2;
   white-space: nowrap;
-  opacity: 0;
-  -webkit-animation: fade-in 0.9s calc(0.8s + 0.1s * var(--i)) var(--ease-out-cubic) forwards;
-          animation: fade-in 0.9s calc(0.8s + 0.1s * var(--i)) var(--ease-out-cubic) forwards;
 }
 
 .masonry .block-reveal {

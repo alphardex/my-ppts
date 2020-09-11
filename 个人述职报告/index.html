@@ -15,14 +15,6 @@
 </head>
 
 <body>
-	<svg width="0" height="0" class="absolute">
-		<filter id="noise">
-			<feTurbulence type="turbulence" baseFrequency="0.01 0.4" numOctaves="2" seed="2" stitchTiles="stitch" result="turbulence1">
-				<animate attributeName="baseFrequency" from="0.01 0.4" to="0.01 4" dur="0.6s" repeatCount="indefinite"></animate>
-			</feTurbulence>
-			<feDisplacementMap in="SourceGraphic" in2="turbulence1" scale="20" xChannelSelector="R" yChannelSelector="R" result="displacementMap" />
-		</filter>
-	</svg>
 	<div class="reveal">
 		<div class="slides">
 			<section>
@@ -30,6 +22,7 @@
 					<div class="title slide-bar">个人述职报告</div>
 					<div class="subtitle slide-bar">——王浩彬</div>
 				</header>
+				<div class="mt-4 fade-in" style="animation-delay: 4s;">积分：100.69</div>
 			</section>
 			<section>
 				<div class="flex justify-center items-center">
@@ -145,73 +138,73 @@
 							<div class="block-reveal">
 								<img src="./assets/sum-1.png" alt="">
 							</div>
-							<div class="label">大墅尚品</div>
+							<div class="label staggered-rise-in" data-delay="0.6">大墅尚品</div>
 						</div>
 						<div class="masonry__item">
 							<div class="block-reveal">
 								<img src="./assets/sum-2.png" alt="">
 							</div>
-							<div class="label">夏日饮品节</div>
+							<div class="label staggered-rise-in" data-delay="0.65">夏日饮品节</div>
 						</div>
 						<div class="masonry__item">
 							<div class="block-reveal">
 								<img src="./assets/sum-3.png" alt="">
 							</div>
-							<div class="label">高新区答题</div>
+							<div class="label staggered-rise-in" data-delay="0.7">高新区答题</div>
 						</div>
 						<div class="masonry__item">
 							<div class="block-reveal">
 								<img src="./assets/sum-4.png" alt="">
 							</div>
-							<div class="label">性格测试</div>
+							<div class="label staggered-rise-in" data-delay="0.75">性格测试</div>
 						</div>
 						<div class="masonry__item">
 							<div class="block-reveal">
 								<img src="./assets/sum-5.png" alt="">
 							</div>
-							<div class="label">常熟七五普法</div>
+							<div class="label staggered-rise-in" data-delay="0.8">常熟七五普法</div>
 						</div>
 						<div class="masonry__item">
 							<div class="block-reveal">
 								<img src="./assets/sum-6.png" alt="">
 							</div>
-							<div class="label">文明健康广告</div>
+							<div class="label staggered-rise-in" data-delay="0.85">文明健康广告</div>
 						</div>
 						<div class="masonry__item">
 							<div class="block-reveal">
 								<img src="./assets/sum-7.png" alt="">
 							</div>
-							<div class="label">垃圾分一分</div>
+							<div class="label staggered-rise-in" data-delay="0.9">垃圾分一分</div>
 						</div>
 						<div class="masonry__item">
 							<div class="block-reveal">
 								<img src="./assets/sum-8.png" alt="">
 							</div>
-							<div class="label">禧徕乐周年庆</div>
+							<div class="label staggered-rise-in" data-delay="0.95">禧徕乐周年庆</div>
 						</div>
 						<div class="masonry__item">
 							<div class="block-reveal">
 								<img src="./assets/sum-9.png" alt="">
 							</div>
-							<div class="label">卡滋贝诺点亮</div>
+							<div class="label staggered-rise-in" data-delay="1.0">卡滋贝诺点亮</div>
 						</div>
 						<div class="masonry__item">
 							<div class="block-reveal">
 								<img src="./assets/sum-10.png" alt="">
 							</div>
-							<div class="label">十佳污防投票</div>
+							<div class="label staggered-rise-in" data-delay="1.05">十佳污防投票</div>
 						</div>
 						<div class="masonry__item">
 							<div class="block-reveal">
 								<img src="./assets/sum-11.png" alt="">
 							</div>
-							<div class="label">城市管家投票</div>
+							<div class="label staggered-rise-in" data-delay="1.1">城市管家投票</div>
 						</div>
 						<div class="masonry__item">
 							<div class="block-reveal">
 								<img src="./assets/sum-12.png" alt="">
 							</div>
-							<div class="label">家装监理小程序</div>
+							<div class="label staggered-rise-in" data-delay="1.15">家装监理小程序</div>
 						</div>
 					</div>
 					<div class="loading">Loading</div>
@@ -237,7 +230,7 @@
 					<div class="flex flex-col text-left leading-relaxed">
 						<div class="fade-in-bottom" style="animation-delay: 0.6s;">
 							<div class="font-bold">活动特色</div>
-							<div>横版卷轴类答题闯关活动，给人一种身临其境的感觉，<br>完美体现了“安全生产”这一主题</div>
+							<div>横版卷轴类答题闯关活动，以一个工人的视角来走遍<br>生产环境的每一个角落来进行安全生产相关的知识问答<br>，给人一种身临其境的感觉，<br>体现了“安全生产”这一主题</div>
 						</div>
 						<div class="fade-in-bottom" style="animation-delay: 0.7s;">
 							<div class="font-bold">活动流程</div>
@@ -293,7 +286,7 @@
 					<div class="flex flex-col text-left leading-relaxed">
 						<div class="fade-in-bottom" style="animation-delay: 0.6s;">
 							<div class="font-bold">活动特色</div>
-							<div>横版卷轴类答题闯关活动，给人一种身临其境的感觉，<br>完美体现了“安全生产”这一主题</div>
+							<div>定时垃圾分类的游戏活动，用户应在1分钟的时间内<br>尽可能多地将从天而降的垃圾分到正确的垃圾桶里<br>，体现了“垃圾分类”这一环保主题</div>
 						</div>
 						<div class="fade-in-bottom" style="animation-delay: 0.7s;">
 							<div class="font-bold">活动流程</div>
@@ -337,7 +330,7 @@
 					<div class="flex flex-col text-left leading-relaxed">
 						<div class="fade-in-bottom" style="animation-delay: 0.6s;">
 							<div class="font-bold">活动特色</div>
-							<div>横版卷轴类答题闯关活动，给人一种身临其境的感觉，<br>完美体现了“安全生产”这一主题</div>
+							<div>滑动式的展示活动，用户通过滑动手机屏幕来体验一个个<br>法制宣传相关的案例，体现了“七五普法”这一个主题</div>
 						</div>
 						<div class="fade-in-bottom" style="animation-delay: 0.7s;">
 							<div class="font-bold">活动流程</div>
@@ -358,108 +351,6 @@
 					</div>
 				</div>
 			</section>
-			<!-- <section>
-				<h2>活动流程</h2>
-				<div class="mx-36 flex justify-between items-center">
-					<img src="./assets/project-2-flow.gif" class="w-32" alt="">
-					<ol class="text-lg">
-						<li>倒计时开始，游戏开始</li>
-						<li>各种垃圾会不断地从屏幕上方的随机位置落下来</li>
-						<li>垃圾落到地面上会消失</li>
-						<li>尽可能多地将垃圾拖放到正确的垃圾桶内</li>
-						<li>分类正确则加分，错误则减分</li>
-						<li>1分钟内达到100分以上即可获得抽奖机会</li>
-					</ol>
-				</div>
-			</section>
-			<section>
-				<h2>活动要点</h2>
-				<div class="mx-36 flex justify-between items-center">
-					<img src="./assets/project-2-flow.gif" class="w-32" alt="">
-					<ol class="text-lg">
-						<li>如何控制垃圾的动画（下落，拖拽等）</li>
-						<li>如何让垃圾下落是随机的</li>
-						<li>如何判断垃圾是否被正确地归类了</li>
-					</ol>
-				</div>
-			</section>
-			<section>
-				<h5>如何控制垃圾的动画（下落，拖拽等）</h5>
-				<div class="mx-24 flex justify-between items-center space-x-8 text-2xl">
-					<img src="./assets/project-2-flow.gif" class="w-32 ml-4" alt="">
-				</div>
-				<ul class="text-base">
-					<li>本项目主要有3个动画帧：下落动画帧、拖放帧、回收动画帧</li>
-					<li>垃圾默认是下落状态，当用户开始拖拽垃圾时要暂停下落帧</li>
-					<li>松开垃圾时播放回收动画帧，并判断正误</li>
-				</ul>
-			</section>
-			<section>
-				<h5>如何让垃圾下落是随机的</h5>
-				<ul class="text-base">
-					<li>首先在样式里生成随机的垃圾位置</li>
-					<li>然后在逻辑里将垃圾数组打乱顺序</li>
-					<li>这样不仅位置是随机的，而且每玩一次垃圾本身也是随机的</li>
-				</ul>
-			</section>
-			<section>
-				<h5>如何判断垃圾是否被正确地归类了</h5>
-				<div class="mx-12 flex justify-between items-center text-base space-x-8">
-					<img src="./assets/project-2-1.png" class="w-32" alt="">
-					<img src="./assets/project-2-2.png" class="w-32" alt="">
-					<img src="./assets/project-2-3.png" class="w-32" alt="">
-				</div>
-				<ul class="text-base">
-					<li>首先要判断垃圾和哪个垃圾桶接触了</li>
-					<li>计算出四个垃圾桶的中心与垃圾中心之间的距离</li>
-					<li>找出最近距离</li>
-					<li>选取最近距离的垃圾桶再判断对错</li>
-				</ul>
-			</section> -->
-			<!-- <section>
-				<h2>活动流程</h2>
-				<div class="mx-40 flex justify-between items-center">
-					<img src="./assets/project-3-flow.gif" class="w-32" alt="">
-					<ol class="text-lg ml-12">
-						<li>进入页面后开始下滑</li>
-						<li>下滑的过程中会不断地出现元素</li>
-						<li>元素出现的动画种类很多</li>
-						<li>当上滑时元素会消失，再次下滑时出现</li>
-					</ol>
-				</div>
-			</section>
-			<section>
-				<h2>活动要点</h2>
-				<div class="mx-40 flex justify-between items-center">
-					<img src="./assets/project-3-flow.gif" class="w-32" alt="">
-					<ol class="text-lg pr-24">
-						<li>如何实现滚动时的“倒带”动画效果</li>
-						<li>如何实现动态渐变文字</li>
-					</ol>
-				</div>
-			</section>
-			<section>
-				<h5>如何实现滚动时的“倒带”动画效果</h5>
-				<div class="mx-40 flex justify-between items-center text-base">
-					<img src="./assets/project-3-1.gif" class="w-32" alt="">
-				</div>
-				<ul class="text-base">
-					<li>GSAP于2020年5月底新出的插件——ScrollTrigger</li>
-					<li>当用户滚动到一定距离时才触发动画，并且能够倒放</li>
-					<li>主要还是动画的实现方式</li>
-				</ul>
-			</section>
-			<section>
-				<h5>如何实现动态渐变文字</h5>
-				<div class="mx-40 flex justify-between items-center text-base">
-					<img src="./assets/project-3-2.gif" class="w-32" alt="">
-				</div>
-				<ul class="text-base">
-					<li>首先将文字背景设置成渐变背景</li>
-					<li>将文字颜色设置为透明，背景裁剪方式设置为按文本裁剪</li>
-					<li>这样渐变背景就会被裁剪为文字的形状，再加上动画就完成了</li>
-				</ul>
-			</section> -->
 			<section>
 				<div class="frame inline-flex">
 					<div class="staggered-flip-in">心得体会</div>
@@ -486,10 +377,10 @@
 						<img class="w-50 h-90 slide-in-bottom" src="./assets/kansou-1-4.gif" alt="" style="animation-delay: 0.8s;">
 					</div>
 					<ul class="text-base leading-relaxed text-left">
-						<li class="fade-in-bottom" style="animation-delay: 1.1s;">在现实生活中，人们的大脑习惯了被动态的东西所吸引</li>
-						<li class="fade-in-bottom" style="animation-delay: 1.2s;">适当的动画效果可以为网页添加有价值的交互和反馈，提升用户的情感体验</li>
-						<li class="fade-in-bottom" style="animation-delay: 1.3s;">前端开发中实现动画有以下方式：CSS、SVG、Canvas、JS动画引擎</li>
-						<li class="fade-in-bottom" style="animation-delay: 1.4s;">个人经常用CSS实现动画，在掘金上写过一篇文章，链接在此ppt末尾</li>
+						<li class="staggered-rise-in" data-delay="1">在现实生活中，人们的大脑习惯了被动态的东西所吸引</li>
+						<li class="staggered-rise-in" data-delay="1.1">适当的动画效果可以为网页添加有价值的交互和反馈，提升用户的情感体验</li>
+						<li class="staggered-rise-in" data-delay="1.2">前端开发中实现动画有以下方式：CSS、SVG、Canvas、WebGL、JS动画引擎</li>
+						<li class="staggered-rise-in" data-delay="1.3">个人经常用CSS实现动画，在掘金上写过一篇文章，链接在此ppt末尾</li>
 					</ul>
 				</div>
 			</section>
@@ -507,33 +398,12 @@
 						</div>
 					</div>
 					<ul class="text-base leading-relaxed text-left">
-						<li class="fade-in-bottom" style="animation-delay: 0.8s;">在前端开发的过程中，适配与兼容性是必须要考虑的问题</li>
-						<li class="fade-in-bottom" style="animation-delay: 0.9s;">页面在每个手机中显示各不相同，要确保页面在每个手机上的显示都是正常的</li>
-						<li class="fade-in-bottom" style="animation-delay: 1s;">每个系统都有各自的特征，要根据这些特征进行适配，杜绝因系统本身而产生的问题</li>
+						<li class="staggered-rise-in" data-delay="0.7">在前端开发的过程中，适配与兼容性是必须要考虑的问题</li>
+						<li class="staggered-rise-in" data-delay="0.8">页面在每个手机中显示各不相同，要确保页面在每个手机上的显示都是正常的</li>
+						<li class="staggered-rise-in" data-delay="0.9">每个系统都有各自的特征，要根据这些特征进行适配，杜绝因系统本身而产生的问题</li>
 					</ul>
 				</div>
 			</section>
-			<!-- <section>
-				<h3>遇到兼容性难题怎么办？</h3>
-				<h5 class="text-2xl">一调试，二查</h5>
-			</section>
-			<section>
-				<h5>一次解决兼容性难题的过程</h5>
-				<div class="flex items-center space-x-12">
-					<img class="w-42" src="./assets/kansou-2-3.jpg" alt="">
-					<img class="w-60" src="./assets/kansou-2-4.png" alt="">
-					<div class="flex flex-col space-y-4">
-						<img class="w-100" src="./assets/kansou-2-5.png" alt="">
-						<img class="w-100" src="./assets/kansou-2-6.png" alt="">
-					</div>
-				</div>
-				<ul class="text-base">
-					<li>梦百合H5活动中，有生成海报这一个功能，大部分手机上都正常，但小部分手机不正常</li>
-					<li>于是我加上了控制台，在系统一栏中发现了问题手机的系统版本</li>
-					<li>然后上谷歌进行搜索，未果后再上github的issue区搜索该系统版本号</li>
-					<li>果不其然有人也遇到了同样的问题，并给出了解决方案</li>
-				</ul>
-			</section> -->
 			<section>
 				<div class="flex flex-col items-center justify-center space-y-4">
 					<div class="land-in font-bold text-3xl leading-loose">团队沟通，是必须要保证的</div>
@@ -553,6 +423,18 @@
 					<ul class="text-base leading-relaxed text-left">
 						<li class="fade-in-bottom" style="animation-delay: 0.8s;">做完一个活动时，要将遇到的问题统统地总结归纳出来</li>
 						<li class="fade-in-bottom" style="animation-delay: 0.9s;">这样下次遇到同样的问题时就能立马解决，保证项目的进度了</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<div class="flex flex-col items-center justify-center space-y-4">
+					<div class="land-in font-bold text-3xl leading-loose">不足与改进</div>
+					<img class="w-90 fade-in shadow" src="./assets/flaw.png" alt="" style="animation-delay: 0.6s;">
+					<ul class="text-base leading-relaxed text-left">
+						<li class="fade-in-bottom font-bold" style="animation-delay: 0.8s;">平时与团队成员沟通太少</li>
+						<li class="staggered-rise-in" data-delay="1">加强与团队成员的沟通</li>
+						<li class="fade-in-bottom font-bold" style="animation-delay: 0.9s;">做项目时还不够细心</li>
+						<li class="staggered-rise-in" data-delay="1.1">做项目时能考虑到更多的方面，做到无懈可击</li>
 					</ul>
 				</div>
 			</section>
@@ -739,7 +621,8 @@
 				type: 'pie',
 				data: projects,
 				label: {
-					formatter: '{b}: {c}'
+					formatter: '{b}: {c}',
+					fontSize: 18
 				}
 			}]
 		};
@@ -779,12 +662,13 @@
 		// staggered-rise-in-text
 		let staggeredRiseInTexts = document.querySelectorAll(".staggered-rise-in");
 		staggeredRiseInTexts.forEach(text => {
+			let basicDelay = Number(text.dataset.delay) || 0
 			let letters = text.textContent.split("");
 			text.textContent = "";
 			letters.forEach((letter, i) => {
 				let span = document.createElement("span");
 				span.textContent = letter;
-				span.style.animationDelay = `${i / 20}s`;
+				span.style.animationDelay = `${basicDelay + i / 20}s`;
 				text.append(span);
 			});
 		});

@@ -669,10 +669,12 @@ header {
     }
 
     .label {
+      display: flex;
+      justify-content: center;
       font-size: 14px;
+      font-weight: bold;
+      line-height: 2;
       white-space: nowrap;
-      opacity: 0;
-      animation: fade-in 0.9s calc(0.8s + 0.1s * var(--i)) var(--ease-out-cubic) forwards;
     }
   }
 
