@@ -1,6 +1,11 @@
 :root {
   --grey-color: #7f8c8d;
-  --light-blue-grad: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+  --light-blue-grad: linear-gradient(
+    to top,
+    #f3e7e9 0%,
+    #e3eeff 99%,
+    #e3eeff 100%
+  );
 }
 
 body {
@@ -13,6 +18,10 @@ body {
 
 .w-200 {
   width: 50rem;
+}
+
+.w-300 {
+  width: 75rem;
 }
 
 .h-120 {
