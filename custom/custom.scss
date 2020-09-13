@@ -22,16 +22,8 @@ body {
   width: 50rem;
 }
 
-.w-300 {
-  width: 75rem;
-}
-
 .h-120 {
   height: 30rem;
-}
-
-.flipped {
-  transform: scaleX(-1);
 }
 
 [hidden] {
@@ -40,10 +32,6 @@ body {
   *::after {
     animation-play-state: paused !important;
   }
-}
-
-.noise {
-  filter: url("#noise");
 }
 
 // reset
